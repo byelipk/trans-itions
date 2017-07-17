@@ -1,0 +1,42 @@
+{{#if show}}
+  {{#transition-group transition-class="show"}}
+    <div class="cover purple">
+      <h1>I am using  <code>transition-group</code> component.</h1>
+      <button {{action 'show'}} type="button" name="button">Hide show</button>
+    </div>
+  {{/transition-group}}
+{{/if}}
+
+{{#if slideFromBottom}}
+  {{#transition-group transition-class="slide-from-bottom"}}
+    <div class="cover pink">
+      <h1>I am using  <code>transition-group</code> component.</h1>
+      <button {{action 'slideFromBottom'}} type="button" name="button">Hide slide from bottom</button>
+    </div>
+  {{/transition-group}}
+{{/if}}
+
+{{#if slideFromTop}}
+  {{#transition-group transition-class="slide-from-top"}}
+    <div class="cover cover-h-35 blue">
+      <h1>I am using  <code>transition-group</code> component.</h1>
+      <button {{action 'slideFromTop'}} type="button" name="button">Hide slide from top</button>
+    </div>
+  {{/transition-group}}
+{{/if}}
+
+{{#if slideFromLeft}}
+  {{#transition-group transition-class="slide-from-left"}}
+    <div class="cover cover-w-35 blue">
+      <h1>I am using  <code>transition-group</code> component.</h1>
+      <button {{action 'slideFromLeft'}} type="button" name="button">Hide slide from left</button>
+    </div>
+  {{/transition-group}}
+{{/if}}
+
+<button {{action 'show'}} type="button" name="button">Show</button>
+<button {{action 'slideFromBottom'}} type="button" name="button">Slide From Bottom</button>
+<button {{action 'slideFromTop'}} type="button" name="button">Slide From Top</button>
+<button {{action 'slideFromLeft'}} type="button" name="button">Slide From Left</button>
+
+{{yield}}
