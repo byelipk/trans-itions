@@ -85,3 +85,10 @@
 .blue {
   background-color: blue;
 }
+
+@media all and (device-width: 375px) and (device-height: 667px) {
+  html {
+    height: 667px;
+    width: 375px;
+  }
+}
